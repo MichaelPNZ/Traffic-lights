@@ -16,18 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APP-TK-zjw">
-                                <rect key="frame" x="20" y="800" width="374" height="62"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="START">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="PbV-vU-xI3"/>
-                                </connections>
-                            </button>
                             <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bom-wg-CXw">
                                 <rect key="frame" x="132" y="88" width="150" height="150"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
@@ -36,40 +24,54 @@
                                 </constraints>
                             </view>
                             <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oHi-Em-LoZ">
-                                <rect key="frame" x="132" y="258" width="150" height="150"/>
+                                <rect key="frame" x="132" y="278" width="150" height="150"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="dSM-p7-e7d"/>
                                 </constraints>
                             </view>
-                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OU7-5K-pQf">
-                                <rect key="frame" x="132" y="430" width="150" height="150"/>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJg-jC-l1T">
+                                <rect key="frame" x="132" y="468" width="150" height="150"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="Lgf-mn-frJ"/>
+                                    <constraint firstAttribute="height" constant="150" id="OQZ-fK-idb"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fa0-eC-Pdl">
+                                <rect key="frame" x="20" y="765" width="374" height="74"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="START">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="bN0-MF-hkX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
                             <constraint firstItem="Bom-wg-CXw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="26S-oV-Rez"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="APP-TK-zjw" secondAttribute="trailing" constant="20" id="5Pt-4h-ePg"/>
-                            <constraint firstItem="OU7-5K-pQf" firstAttribute="top" secondItem="oHi-Em-LoZ" secondAttribute="bottom" constant="22" id="77R-4q-nWs"/>
+                            <constraint firstItem="fa0-eC-Pdl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5lX-R4-12m"/>
                             <constraint firstItem="oHi-Em-LoZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="94o-xa-jt6"/>
-                            <constraint firstItem="APP-TK-zjw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ML2-eM-d5z"/>
+                            <constraint firstItem="iJg-jC-l1T" firstAttribute="top" secondItem="oHi-Em-LoZ" secondAttribute="bottom" constant="40" id="HUy-6n-FBn"/>
                             <constraint firstItem="Bom-wg-CXw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="QC8-HH-HvM"/>
-                            <constraint firstItem="OU7-5K-pQf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="QES-Ha-9wi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OU7-5K-pQf" secondAttribute="trailing" constant="132" id="RHP-gW-L5i"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oHi-Em-LoZ" secondAttribute="trailing" constant="132" id="SbI-y8-IqG"/>
-                            <constraint firstItem="APP-TK-zjw" firstAttribute="top" secondItem="OU7-5K-pQf" secondAttribute="bottom" constant="220" id="X3D-LF-EXf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fa0-eC-Pdl" secondAttribute="trailing" constant="20" id="UQ9-PY-2sd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bom-wg-CXw" secondAttribute="trailing" constant="132" id="YUo-ja-0rv"/>
-                            <constraint firstItem="oHi-Em-LoZ" firstAttribute="top" secondItem="Bom-wg-CXw" secondAttribute="bottom" constant="20" id="t9O-tx-DeT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fa0-eC-Pdl" secondAttribute="bottom" constant="23" id="dIn-LU-TJ4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iJg-jC-l1T" secondAttribute="trailing" constant="132" id="ipk-Ic-boB"/>
+                            <constraint firstItem="fa0-eC-Pdl" firstAttribute="top" secondItem="iJg-jC-l1T" secondAttribute="bottom" constant="147" id="n7l-pM-q96"/>
+                            <constraint firstItem="oHi-Em-LoZ" firstAttribute="top" secondItem="Bom-wg-CXw" secondAttribute="bottom" constant="40" id="t9O-tx-DeT"/>
+                            <constraint firstItem="iJg-jC-l1T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="yCF-xF-0yQ"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="greenLightsView" destination="OU7-5K-pQf" id="Eb6-nm-9jF"/>
+                        <outlet property="greenLightsView" destination="iJg-jC-l1T" id="CDp-gy-97n"/>
                         <outlet property="redLightsView" destination="Bom-wg-CXw" id="DOe-wv-mYi"/>
+                        <outlet property="startButton" destination="fa0-eC-Pdl" id="C0Q-ax-NmP"/>
                         <outlet property="yellowLightsView" destination="oHi-Em-LoZ" id="FiV-17-5OZ"/>
                     </connections>
                 </viewController>
